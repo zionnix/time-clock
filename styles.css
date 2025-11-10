@@ -109,9 +109,8 @@ h1, h2 {
   justify-content: center;
   font-size: 5rem;
   font-family: "London Regular", serif;
-  text-decoration-line: underline;
-  text-decoration-color: white;
-  text-decoration-thickness: 0.5px;
+  -webkit-text-decoration: underline 0.5px white;
+          text-decoration: underline 0.5px white;
   text-underline-offset: 8px;
 }
 
@@ -926,6 +925,19 @@ h1, h2 {
   position: absolute;
   top: calc(50% - 100px);
   left: calc(20% - 100px);
+}
+
+.weather-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  z-index: 10;
+  background: transparent;
+  cursor: pointer;
 }
 
 #steps {
